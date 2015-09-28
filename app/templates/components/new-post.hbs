@@ -1,0 +1,29 @@
+{{yield}}
+{{#if addNewPost}}
+  <form>
+      <div class='form-group'>
+          <label for="author">Author:</label>
+          {{textarea value=author id="author" class='form-control'}}
+      </div>
+
+      <div class='form-group'>
+          <label for="title">Title:</label>
+          {{textarea value=title id="title" class='form-control'}}
+      </div>
+
+      <div class='form-group'>
+          <label for="text">Text:</label>
+          {{textarea value=text id="text" class='form-control'}}
+      </div>
+
+      <div class='form-group'>
+          <label for="image">image:</label>
+          {{input value=image id="image" class='form-control'}}
+      </div>
+
+      <button {{action 'savePost'}}>Save</button>
+  </form>
+
+{{else}}
+  <button {{action 'postFormShow'}}>New Post</button>
+{{/if}}

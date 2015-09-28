@@ -1,0 +1,24 @@
+{ "posts" : [{
+  "author": "Mr.Bla",
+  "title": "House for Sale",
+  "text": "blablaba",
+  "category": "Housing",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg"
+}],
+"categories" : [{
+
+"name": "Housing"
+}, {
+ "name": "Jobs"
+
+}, {
+ "name": "Romance"
+
+}, {
+"name": "For sale"
+
+}, {
+"name": "Discussion forum"
+
+}]
+}
