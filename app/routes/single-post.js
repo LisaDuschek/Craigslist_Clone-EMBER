@@ -16,9 +16,9 @@ export default Ember.Route.extend({
         this.transitionTo('category', params.category);
       },
 
-      deletePost(post) {
+      destroyPost(post) {
         post.destroyRecord();
-        this.transitionTo('category');
+        this.transitionTo('index');
       },
 
       editPost(post, params) {
@@ -27,8 +27,10 @@ export default Ember.Route.extend({
             post.set(key, params[key]);
           }
         });
+
         post.save();
         this.transitionTo('category');
+
       }
-    }
+  }
 });

@@ -1,0 +1,53 @@
+
+/*###Index###*/
+#welcome{
+
+    text-align:center;
+    font-style: oblique;
+}
+
+#indexlist{
+    text-align:center;
+}
+
+#indextext{
+    text-align:center;
+}
+
+
+/*##CATEGORY-HBS##*/
+
+#modelname{
+    text-align:center;
+}
+
+#postlist{
+    text-align:center;
+}
+
+#ulposts{
+    text-align:center;
+    list-style:none;
+}
+#posts{
+    text-align:center;
+
+}
+#headercategories{
+    text-align:center;
+
+}
+
+/*##Single Post##*/
+
+#singlepost{
+    text-align:center;
+}
+
+.post{
+    text-align:center;
+}
+
+#body{
+    background-color:#D8D8D8;
+}

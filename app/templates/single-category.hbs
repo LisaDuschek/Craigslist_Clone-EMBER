@@ -1,15 +1,15 @@
 {{outlet}}
 
-<h1>{{model.name}}</h1>
+<h1 id="modelname">{{model.name}}</h1>
 
-{{new-post savePost='savePost' category=model}}
 
-<h3>All the posts for {{model.name}}:</h3><br>
-<div>
-  <ul>
+
+<h3 id="postlist">All the posts for {{model.name}}:</h3><br>
+<div id="posts">
+  <ul id="ulposts">
     {{#each model.posts as |post|}}
        <li>{{#link-to 'single-post' post.id}} {{post.title}}{{/link-to}} </li>
     {{/each}}
   </ul>
-
+  {{new-post savePost='savePost' category=model}}
 </div>

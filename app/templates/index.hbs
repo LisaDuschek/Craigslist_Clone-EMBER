@@ -1,10 +1,13 @@
-<h1>Welcome to the clone of Craigslist!</h1>
+<h1 id="welcome">Welcome to Craigslist-the original clone!</h1>
 
-<p>Browse our exiting categories and find what you seek!</p>
+<p id="indextext">Browse our exiting categories and find what you seek!</p>
 
-<ul>
+<div class="w3-container">
+    <h4 id="headercategories">All categories</h4>
+<ul id="indexlist">
   {{#each model as |category|}}
      {{category-tile category=category}}
 
   {{/each}}
 </ul>
+</div>
